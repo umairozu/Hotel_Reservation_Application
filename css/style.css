@@ -1,0 +1,81 @@
+body {
+  min-height: 100vh;
+}
+
+.section-card-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.hotel-thumb {
+  height: 180px;
+  object-fit: cover;
+}
+
+.popular-thumb {
+  height: 240px;
+  object-fit: cover;
+}
+
+.hover-lift {
+  transition: transform 0.2s;
+}
+
+.hover-lift:hover {
+  transform: translateY(4px);
+}
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+.search-result-card,
+.deal-card,
+.popular-card {
+  height: 100%;
+}
+
+.search-result-card .card-body,
+.deal-card .card-body,
+.popular-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-card .card-text,
+.deal-card .card-text,
+.popular-card .card-text {
+  flex-grow: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 70% 70%;
+}
+
+.empty-state {
+  background: #fff;
+  border: 1px dashed #ced4da;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.hotel-list-card {
+  cursor: pointer;
+}
+
+.hotel-list-card:focus {
+  outline: 3px solid rgba(13, 110, 253, 0.35);
+  outline-offset: 3px;
+}
+
+.results-sticky-top {
+  position: sticky;
+  top: 1rem;
+}
