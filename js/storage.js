@@ -176,3 +176,20 @@ function createBookingDraft(hotel, criteria) {
     }
   };
 }
+
+function calculateNightCount(checkInDate, checkOutDate) {
+  if (!checkInDate || !checkOutDate) {
+    return 1;
+  }
+
+  const checkIn = new Date(checkInDate);
+  const checkOut = new Date(checkOutDate);
+  const diffMs = checkOut - checkIn;
+  const nights = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+
+  return nights > 0 ? nights : 1;
+}
+
+function calculateTotalAmount(pricePerNight, roomCount, nights) {
+  return Number(pricePerNight) * Number(roomCount) * Number(nights);
+}
