@@ -115,15 +115,8 @@ function bindPopularSearchEvents() {
       runSearchAndGoToResults(card.dataset.query);
     });
 
-    card.addEventListener("keydown", function (event) {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        runSearchAndGoToResults(card.dataset.query);
-      }
-    });
   });
 }
-//
 
 function handleSearchSubmit(event) {
   event.preventDefault();
@@ -156,9 +149,7 @@ function handleSearchSubmit(event) {
   };
 
   const filteredHotels = searchHotels(searchText);
-
-  saveSession(STORAGE_KEYS.SEARCH_CRITERIA, criteria);
-  saveSession(STORAGE_KEYS.SEARCH_RESULTS, filteredHotels);
+  saveSearchState(criteria, filteredHotels);
 
   renderSearchCarousel(filteredHotels, searchText);
 }
@@ -173,9 +164,7 @@ function runSearchAndGoToResults(queryText) {
   };
 
   const filteredHotels = searchHotels(queryText);
-
-  saveSession(STORAGE_KEYS.SEARCH_CRITERIA, criteria);
-  saveSession(STORAGE_KEYS.SEARCH_RESULTS, filteredHotels);
+  saveSearchState(criteria, filteredHotels);
 
   window.location.href = "searchResults.html";
 }
@@ -236,7 +225,7 @@ function renderSearchCarousel(hotels, searchText) {
                         <div class="card-body">
                           <h3 class="h6 mb-1">${hotel.name}</h3>
                           <p class="text-secondary small mb-2">${hotel.city}, ${hotel.country}</p>
-                          <p class="small mb-2">⭐ ${hotel.rating} (${hotel.reviewCount} reviews)</p>
+                          <p class="small mb-2">rating ${hotel.rating} (${hotel.reviewCount} reviews)</p>
                           <p class="fw-semibold mb-0">$${hotel.pricePerNight} / night</p>
                         </div>
                       </div>
@@ -251,13 +240,11 @@ function renderSearchCarousel(hotels, searchText) {
 
       ${slides.length > 1 ? `
         <button class="carousel-control-prev" type="button" data-bs-target="#searchResultsCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-1"></span>
         </button>
 
         <button class="carousel-control-next" type="button" data-bs-target="#searchResultsCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-1"></span>
         </button>
       ` : ""}
     </div>

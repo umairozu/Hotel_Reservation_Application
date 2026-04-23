@@ -130,7 +130,7 @@ const APP_DATA = {
       currency: "USD",
       description: "Elegant marina hotel with sea-view rooms and sunset terrace dining.",
       images: [
-        "https://images.unsplash.com/photo-1501117716987-c8e1ecb210f0?auto=format&fit=crop&w=1200&q=80",
+        "http://pix5.agoda.net/hotelimages/1/-1/fce5d70fac02fcb7aa25f31dd25850a8.jpg?s=312x",
         "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?auto=format&fit=crop&w=1200&q=80"
       ],
@@ -232,6 +232,354 @@ const APP_DATA = {
         { type: "Harbor Room", guests: 2, price: 160, refundable: true },
         { type: "Junior Suite", guests: 3, price: 225, refundable: true }
       ]
+    },
+    {
+      id: 9,
+      name: "Bosphorus Palace Hotel",
+      city: "Istanbul",
+      country: "Türkiye",
+      address: "Besiktas Sahil Cd. No: 12, Istanbul",
+      stars: 5,
+      rating: 9.6,
+      reviewCount: 2840,
+      pricePerNight: 450,
+      currency: "USD",
+      description: "A converted Ottoman-era mansion offering breathtaking views of the Bosphorus bridge and world-class dining.",
+      images: [
+        "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Not allowed",
+        smoking: "Non-smoking property",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "Deluxe Bosphorus Room", guests: 2, price: 450, refundable: true },
+        { type: "Grand Ottoman Suite", guests: 4, price: 980, refundable: false }
+      ]
+    },
+    {
+      id: 10,
+      name: "Sultanahmet Heritage Inn",
+      city: "Istanbul",
+      country: "Türkiye",
+      address: "Mimar Mehmetaga Cd., Istanbul",
+      stars: 4,
+      rating: 9.1,
+      reviewCount: 1520,
+      pricePerNight: 125,
+      currency: "USD",
+      description: "Charming boutique hotel located just steps away from the Blue Mosque and Hagia Sophia.",
+      images: [
+        "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "13:00",
+        checkOut: "11:00",
+        pets: "Allowed",
+        smoking: "No smoking in rooms",
+        children: "Children welcome"
+      },
+      rooms: [
+        { type: "Standard Double", guests: 2, price: 125, refundable: true },
+        { type: "Family Triple", guests: 3, price: 175, refundable: true }
+      ]
+    },
+    {
+      id: 11,
+      name: "Aegean Breeze Resort",
+      city: "Izmir",
+      country: "Türkiye",
+      address: "Cesme Coast Line, Izmir",
+      stars: 5,
+      rating: 8.8,
+      reviewCount: 945,
+      pricePerNight: 285,
+      currency: "USD",
+      description: "Modern seaside resort with private beach access and famous Aegean breakfast buffet.",
+      images: [
+        "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512918766674-ed62b9a19c65?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "15:00",
+        checkOut: "12:00",
+        pets: "Not allowed",
+        smoking: "Dedicated areas only",
+        children: "All ages welcome"
+      },
+      rooms: [
+        { type: "Standard Sea View", guests: 2, price: 285, refundable: true },
+        { type: "Pool Access Suite", guests: 2, price: 410, refundable: false }
+      ]
+    },
+    {
+      id: 12,
+      name: "Capital Plaza Hotel",
+      city: "Ankara",
+      country: "Türkiye",
+      address: "Cankaya District, Ankara",
+      stars: 4,
+      rating: 8.5,
+      reviewCount: 610,
+      pricePerNight: 98,
+      currency: "USD",
+      description: "Sleek, business-focused hotel in the heart of the government district.",
+      images: [
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Not allowed",
+        smoking: "Non-smoking only",
+        children: "Children welcome"
+      },
+      rooms: [
+        { type: "Executive Double", guests: 2, price: 98, refundable: true },
+        { type: "Business Suite", guests: 2, price: 155, refundable: true }
+      ]
+    },
+    {
+      id: 13,
+      name: "Uludag Peak Resort",
+      city: "Bursa",
+      country: "Türkiye",
+      address: "1. Gelisim Bolgesi, Uludag",
+      stars: 5,
+      rating: 8.7,
+      reviewCount: 1340,
+      pricePerNight: 260,
+      currency: "USD",
+      description: "Premier ski-in/ski-out resort featuring a luxury spa and heated indoor-outdoor pool.",
+      images: [
+        "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "11:00",
+        pets: "Small pets allowed",
+        smoking: "No smoking in rooms",
+        children: "Kids club available"
+      },
+      rooms: [
+        { type: "Mountain View Room", guests: 2, price: 260, refundable: true },
+        { type: "Family Chalet", guests: 6, price: 650, refundable: false }
+      ]
+    },
+    {
+      id: 14,
+      name: "Sumela Forest Inn",
+      city: "Trabzon",
+      country: "Türkiye",
+      address: "Macka Village Road, Trabzon",
+      stars: 4,
+      rating: 9.4,
+      reviewCount: 425,
+      pricePerNight: 85,
+      currency: "USD",
+      description: "Peaceful forest retreat near the historic Sumela Monastery with traditional Black Sea architecture.",
+      images: [
+        "https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Allowed",
+        smoking: "Smoking allowed on balconies",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "Forest Cabin", guests: 2, price: 85, refundable: true },
+        { type: "Large Wood House", guests: 4, price: 140, refundable: true }
+      ]
+    },
+    {
+      id: 15,
+      name: "Lake Van Panorama",
+      city: "Van",
+      country: "Türkiye",
+      address: "Edremit Sahil Yolu, Van",
+      stars: 4,
+      rating: 8.3,
+      reviewCount: 310,
+      pricePerNight: 75,
+      currency: "USD",
+      description: "Comfortable hotel offering stunning panoramic views of Lake Van and easy access to Akdamar Island.",
+      images: [
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1472396961695-1ad2a6267749?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Not allowed",
+        smoking: "Non-smoking property",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "Lake View Double", guests: 2, price: 75, refundable: true },
+        { type: "Family Studio", guests: 4, price: 115, refundable: true }
+      ]
+    },
+    {
+      id: 16,
+      name: "Mardin Stone Palace",
+      city: "Mardin",
+      country: "Türkiye",
+      address: "Old Mardin Center, Mardin",
+      stars: 5,
+      rating: 9.7,
+      reviewCount: 780,
+      pricePerNight: 195,
+      currency: "USD",
+      description: "Historic 600-year-old stone mansion overlooking the Mesopotamian plains.",
+      images: [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "11:00",
+        pets: "Not allowed",
+        smoking: "Non-smoking property",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "Historical Suite", guests: 2, price: 195, refundable: true },
+        { type: "Plains View King", guests: 2, price: 245, refundable: false }
+      ]
+    },
+    {
+      id: 17,
+      name: "Pamukkale Thermal Spa",
+      city: "Denizli",
+      country: "Türkiye",
+      address: "Pamukkale Kasabasi, Denizli",
+      stars: 4,
+      rating: 8.2,
+      reviewCount: 2100,
+      pricePerNight: 110,
+      currency: "USD",
+      description: "Relaxing stay with in-house thermal pools directly fed by the white travertines.",
+      images: [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "15:00",
+        checkOut: "11:00",
+        pets: "Not allowed",
+        smoking: "No smoking inside",
+        children: "Children welcome"
+      },
+      rooms: [
+        { type: "Standard Thermal", guests: 2, price: 110, refundable: true },
+        { type: "Wellness Suite", guests: 2, price: 190, refundable: false }
+      ]
+    },
+    {
+      id: 18,
+      name: "Ephesus Grand Hotel",
+      city: "Selcuk",
+      country: "Türkiye",
+      address: "Selcuk Center, Izmir",
+      stars: 4,
+      rating: 8.9,
+      reviewCount: 940,
+      pricePerNight: 130,
+      currency: "USD",
+      description: "Classic hotel perfectly positioned for exploring the ancient city of Ephesus and Temple of Artemis.",
+      images: [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1506059618471-724396517a67?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Not allowed",
+        smoking: "Non-smoking property",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "History View Room", guests: 2, price: 130, refundable: true },
+        { type: "Large Triple Room", guests: 3, price: 165, refundable: true }
+      ]
+    },
+    {
+      id: 19,
+      name: "Konak Square Boutique",
+      city: "Izmir",
+      country: "Türkiye",
+      address: "Konak Mah., Izmir",
+      stars: 4,
+      rating: 8.6,
+      reviewCount: 520,
+      pricePerNight: 105,
+      currency: "USD",
+      description: "Artistic boutique hotel located right next to the historic Clock Tower in Izmir.",
+      images: [
+        "https://images.unsplash.com/photo-1522770179533-24471fcdba45?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Small dogs allowed",
+        smoking: "Non-smoking only",
+        children: "Children are welcome"
+      },
+      rooms: [
+        { type: "Urban Double", guests: 2, price: 105, refundable: true },
+        { type: "Clock Tower View", guests: 2, price: 145, refundable: true }
+      ]
+    },
+    {
+      id: 20,
+      name: "Akyaka River Lodge",
+      city: "Mugla",
+      country: "Türkiye",
+      address: "Azmak River Side, Akyaka",
+      stars: 4,
+      rating: 9.2,
+      reviewCount: 390,
+      pricePerNight: 140,
+      currency: "USD",
+      description: "Eco-friendly lodge built from local pine wood, located on the crystal-clear Azmak River.",
+      images: [
+        "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+      ],
+      policies: {
+        checkIn: "14:00",
+        checkOut: "12:00",
+        pets: "Allowed",
+        smoking: "Outdoor only",
+        children: "Adults preferred (12+)"
+      },
+      rooms: [
+        { type: "Riverside Cabin", guests: 2, price: 140, refundable: true },
+        { type: "Deluxe River Lodge", guests: 2, price: 190, refundable: true }
+      ]
     }
   ],
 
@@ -272,6 +620,94 @@ const APP_DATA = {
       details: "No extra fees for pets and a welcome kit including treats and a cozy bed.",
       imageUrl: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80"
     },
+    {
+      id: 8,
+      title: "Honeymoon Special",
+      details: "Complimentary champagne, flower decoration, and a private dinner for newlyweds in Cappadocia and Mardin.",
+      imageUrl: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 9,
+      title: "Winter Ski Pass",
+      details: "Get 2 free daily ski passes for each room booked at Uludag and Erciyes hotels.",
+      imageUrl: "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 10,
+      title: "Aegean Early Bird",
+      details: "Save 25% on summer stays in Izmir and Bodrum if you book before the end of March.",
+      imageUrl: "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 11,
+      title: "Digital Nomad Deal",
+      details: "Special monthly rates and free co-working space access for stays over 14 nights.",
+      imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 12,
+      title: "Culinary Journey",
+      details: "Includes a 3-course dinner and a local cooking workshop at selected boutique hotels.",
+      imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 13,
+      title: "Last Minute City Break",
+      details: "Extra 15% discount for weekend stays booked within 48 hours of check-in in Istanbul and Ankara.",
+      imageUrl: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+
+  popularSearches: [
+    /* ... (Keep your existing Searches 1-8) ... */
+    {
+      id: 9,
+      title: "Istanbul",
+      query: "Istanbul",
+      hotelCount: 15,
+      averagePrice: 210,
+      imageUrl: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 10,
+      title: "Izmir",
+      query: "Izmir",
+      hotelCount: 12,
+      averagePrice: 155,
+      imageUrl: "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 11,
+      title: "Bursa",
+      query: "Bursa",
+      hotelCount: 8,
+      averagePrice: 130,
+      imageUrl: "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 12,
+      title: "Mardin",
+      query: "Mardin",
+      hotelCount: 6,
+      averagePrice: 180,
+      imageUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 13,
+      title: "Trabzon",
+      query: "Trabzon",
+      hotelCount: 10,
+      averagePrice: 95,
+      imageUrl: "https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      id: 14,
+      title: "Denizli",
+      query: "Denizli",
+      hotelCount: 7,
+      averagePrice: 105,
+      imageUrl: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
+    }
   ],
 
   popularSearches: [
